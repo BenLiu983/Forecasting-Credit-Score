@@ -37,7 +37,7 @@ The next step is to tune the parameters of k-NN to increase the prediction accur
 
 After multiple experiments by changing different parameters, it can be concluded that the optimal prediction accuracy of the credit score "grade" by k-NN is 86.7%, when the scaling method is Min-Max, the test size is 0.1, the weight is "distance", the number of neighbors is 15, the type of distance is manhattan and PCA_N=9 (original dataset).
 
-# Model 2 Decision Tree
+# Model 2  Decision Tree
 To discover if there is any room for improvement of the prediction accuracy, the Decision Tree model is implemented. It is noteworthy that the Decision Tree is invariant to the scaling of the data, so preprocessing steps like Min-Max scaling are not necessary. In addition, implementing Decision Tree on the raw dataset takes only few seconds, therefore, there is no need to conduct PCA.
 
 Similarly, I tuned the parameters of Decision Tree to increase the prediction accuracy, take the maximum depth for example.
