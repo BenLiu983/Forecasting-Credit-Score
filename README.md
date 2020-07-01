@@ -30,3 +30,16 @@ It is ideal to utilize the raw dataset for all parts of analysis, however, since
 ![readme_plot5](https://user-images.githubusercontent.com/64850893/86265936-79204a00-bb92-11ea-97c4-00cb86023f74.jpg)
 According to the above graph, Choosing N=5 as PCA components makes most sense, since it increases the efficiency by around 150 times at the cost of about 2% of prediction accuracy, compared to the case when N=9.
 
+The next step is to tune the parameters of k-NN to increase the prediction accuracy, take the number of k-NN neighbors for example.
+![readme_plot6](https://user-images.githubusercontent.com/64850893/86266446-3c088780-bb93-11ea-82e8-2eaec34fc3b0.jpg)
+
+In conclusion, the optimal prediction accuracy of the credit score "grade" by k-NN is 86.7%, when the scaling method is Min-Max, the test size is 0.1, the weight
+is "distance", the number of neighbors is 15, the type of distance is manhattan and PCA_N=9 (original dataset).
+
+# Model 2 Decision Tree
+To discover if there is any room for improvement of the prediction accuracy, another model, the Decision Tree is implemented. It is noteworthy that the Decision Tree is invariant to the scaling of the data, so preprocessing steps like Min-Max scaling are not necessary. In addition, implementing Decision Tree on the raw dataset takes only few seconds, therefore, there is no need to conduct PCA.
+
+Similarly, I tuned the parameters of Decision Tree to increase the prediction accuracy, take the maximum depth for example.
+![readme_plot7](https://user-images.githubusercontent.com/64850893/86267279-77578600-bb94-11ea-8797-97e7c0ce9cdb.jpg)
+
+
