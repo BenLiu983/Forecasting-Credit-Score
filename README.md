@@ -27,4 +27,5 @@ Before applying k-NN to the original loan dataset, I scaled the dataset by 3 sta
 
 It is ideal to utilize the raw dataset for all parts of analysis, however, since this is a 880,000 * 9 dataset, the computation cost is heavy. In fact, it takes about
 20 minutes to compute the results in Table 3. To explore how the parameters of k-NN affects its prediction accuracy efficiently, modification is necessary. Therefore, PCA will be utilized to decrease the number of features in the dataset.
+![readme_plot5](https://user-images.githubusercontent.com/64850893/86265936-79204a00-bb92-11ea-97c4-00cb86023f74.jpg)
 
