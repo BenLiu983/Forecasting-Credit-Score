@@ -22,4 +22,5 @@ Before fitting the dataset with some machine learning models, it is necessary to
  According to above plot, although there are overlaps, it is noteworthy that the color is becoming lighter from the left to the right in the plot. Therefore, it is feasible to classify the dataset with typical classification models.
  
  # Model 1  k-NN
- 
+Before applying k-NN to the original loan dataset, I scaled the dataset by 3 statistical methods, Min-Max Scaling, Standard Scaling and Robust Scaling.
+
