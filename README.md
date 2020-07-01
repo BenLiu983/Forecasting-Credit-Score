@@ -42,4 +42,6 @@ To discover if there is any room for improvement of the prediction accuracy, ano
 Similarly, I tuned the parameters of Decision Tree to increase the prediction accuracy, take the maximum depth for example.
 ![readme_plot7](https://user-images.githubusercontent.com/64850893/86267279-77578600-bb94-11ea-8797-97e7c0ce9cdb.jpg)
 
+One of the advantages of the Decision Tree model is that it is easy to interpret and visualize. For this loan dataset, the prediction accuracy achieves 95.8% when the max depth is 15. The visualization of a decision tree with 15 layers of nodes is a little bit messy. To clearly demonstrate how each node is split by a specific feature, I visualized the process of a decision mdoel when max depth is 4.
+![readme_plot8](https://user-images.githubusercontent.com/64850893/86267758-33b14c00-bb95-11ea-8d0f-b8718f644f3a.jpg)
 
