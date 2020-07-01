@@ -18,3 +18,4 @@ I conducted descriptive analysis about these features respectively, by their sta
 
 # PCA
 Before fitting the dataset with some machine learning models, it is necessary to analyze the relationship with "grade" and other 9 independent features.
+![readme_plot3](https://user-images.githubusercontent.com/64850893/86264357-660c7a80-bb90-11ea-8025-128464be5ceb.jpg)
