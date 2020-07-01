@@ -10,7 +10,8 @@ First of all, I conducted exploratory data analysis and generated visualization.
 
 # Data
 After feature selection, the target dataset contains nearly 1 million records and 10 major features, including 5 numeric features and 5 categorical features.
-![readme_plot1](https://user-images.githubusercontent.com/64850893/86263267-fb0e7400-bb8e-11ea-94f4-0085db804bce.jpg)
+![readme_plot1](https://user-images.githubusercontent.com/64850893/86271399-cd2f2c80-bb9a-11ea-9ec5-4799012e92e8.jpg)
+
 
 # Exploratory Data Analysis (EDA)
 I conducted descriptive analysis about these features respectively, by their statistical values or distribution plots. Then I further explored the correlation between the features.
