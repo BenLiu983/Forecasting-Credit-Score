@@ -14,3 +14,4 @@ After feature selection, the target dataset contains nearly 1 million records an
 
 # Exploratory Data Analysis (EDA)
 I conducted descriptive analysis about these features respectively, by their statistical values or distribution plots. Then I further explored the correlation between the features 
+![readme_plot2](https://user-images.githubusercontent.com/64850893/86263934-d8c92600-bb8f-11ea-90d7-1f41d2781c5d.jpg)
