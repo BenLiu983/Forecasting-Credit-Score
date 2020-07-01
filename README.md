@@ -50,4 +50,10 @@ It is noteworthy that in the optimal Decision Tree model for this loan dataset, 
 
 In summary, with regards to the Decision Tree model, setting the max depth as 15 and thers as default values, the prediction accuracy on the test set is around 95.7%, which is generally regarded as an ideal outcome.
 
+# Conclusion
+The prediction accuracy of the optimal k-NN model achieves 85.8%. It is not influenced by correlation of different features, taking test data as a cumulative features in a
+way of a distance. However, a disadvantage of k-NN model is that, it is somewhat difficult to interpret the relationship between the response feature and the independent
+features. Therefore, the Decision Tree algorithm is utilized, the prediction rate increases to 95.7%. But it is noteworthy that the feature "interest rate" has a considerable influence on the response feature "grade". If the feature "interest rate" is removed, the performance of the Decision Tree model drops dramatically. Therefore, there is a trade-off in applying these 2 models in this loan dataset, where the k-NN model is more robust and the Decision Tree model is easier to interpret.
 
+# Future work
+In the future investigation, I will attempt to study how the feature "loan condition" (good or bad) is influenced by other features. Additionally, more machine learning models with different parameters would be implemented
