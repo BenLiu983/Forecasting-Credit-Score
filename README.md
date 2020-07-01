@@ -23,4 +23,6 @@ Before fitting the dataset with some machine learning models, it is necessary to
  
  # Model 1  k-NN
 Before applying k-NN to the original loan dataset, I scaled the dataset by 3 statistical methods, Min-Max Scaling, Standard Scaling and Robust Scaling.
+![readme_plot4](https://user-images.githubusercontent.com/64850893/86265486-d2d44480-bb91-11ea-90b3-b1e101034852.jpg)
+
 
