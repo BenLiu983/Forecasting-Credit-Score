@@ -45,3 +45,9 @@ Similarly, I tuned the parameters of Decision Tree to increase the prediction ac
 One of the advantages of the Decision Tree model is that it is easy to interpret and visualize. For this loan dataset, the prediction accuracy achieves 95.8% when the max depth is 15. The visualization of a decision tree with 15 layers of nodes is a little bit messy. To clearly demonstrate how each node is split by a specific feature, I visualized the process of a decision mdoel when max depth is 4.
 ![readme_plot8](https://user-images.githubusercontent.com/64850893/86267758-33b14c00-bb95-11ea-8d0f-b8718f644f3a.jpg)
 
+It is noteworthy that in the optimal Decision Tree model for this loan dataset, the "interest rate" takes up a considerable percentage of importance among all 9 features, based on the following table.
+![readme_plot9](https://user-images.githubusercontent.com/64850893/86268012-8e4aa800-bb95-11ea-82c5-a77f699f4611.jpg)
+
+In summary, with regards to the Decision Tree model, setting the max depth as 15 and thers as default values, the prediction accuracy on the test set is around 95.7%, which is generally regarded as an ideal outcome.
+
+
