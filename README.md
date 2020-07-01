@@ -10,3 +10,4 @@ First of all, I conducted exploratory data analysis and generated visualization.
 
 # Data
 After feature selection, the target dataset contains nearly 1 million records and 10 major features, including 5 numeric features and 5 categorical features.
+![readme_plot1](https://user-images.githubusercontent.com/64850893/86263267-fb0e7400-bb8e-11ea-94f4-0085db804bce.jpg)
