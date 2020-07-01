@@ -16,6 +16,6 @@ After feature selection, the target dataset contains nearly 1 million records an
 I conducted descriptive analysis about these features respectively, by their statistical values or distribution plots. Then I further explored the correlation between the features 
 ![readme_plot2](https://user-images.githubusercontent.com/64850893/86263934-d8c92600-bb8f-11ea-90d7-1f41d2781c5d.jpg)
 
-# PCA
-Before fitting the dataset with some machine learning models, it is necessary to analyze the relationship with "grade" and other 9 independent features.
+# PCA 
+Before fitting the dataset with some machine learning models, it is necessary to analyze the relationship with "grade" and other 9 independent features. However, in addition to ’grade’, there are still 9 other features. The goal is tosummarize 9 features to 2 features, so that they can be shown in a 2 dimension intuitive graph. Therefore, principal component analysis (PCA) is utilized.
 ![readme_plot3](https://user-images.githubusercontent.com/64850893/86264357-660c7a80-bb90-11ea-8025-128464be5ceb.jpg)
