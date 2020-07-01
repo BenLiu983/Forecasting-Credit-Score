@@ -19,3 +19,7 @@ I conducted descriptive analysis about these features respectively, by their sta
 # PCA 
 Before fitting the dataset with some machine learning models, it is necessary to analyze the relationship with "grade" and other 9 independent features. However, in addition to ’grade’, there are still 9 other features. The goal is tosummarize 9 features to 2 features, so that they can be shown in a 2 dimension intuitive graph. Therefore, principal component analysis (PCA) is utilized.
 ![readme_plot3](https://user-images.githubusercontent.com/64850893/86264357-660c7a80-bb90-11ea-8025-128464be5ceb.jpg)
+ According to above plot, although there are overlaps, it is noteworthy that the color is becoming lighter from the left to the right in the plot. Therefore, it is feasible to classify the dataset with typical classification models.
+ 
+ # Model 1  k-NN
+ 
