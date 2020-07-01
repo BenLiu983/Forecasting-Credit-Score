@@ -49,7 +49,7 @@ One of the advantages of the Decision Tree model is that it is easy to interpret
 It is noteworthy that in the optimal Decision Tree model for this loan dataset, the "interest rate" takes up a considerable percentage of importance among all 9 features, based on the following table.
 ![readme_plot9](https://user-images.githubusercontent.com/64850893/86268012-8e4aa800-bb95-11ea-82c5-a77f699f4611.jpg)
 
-After multiple experiments by changing different parameters of the Decision Tree model, it can be concluded that the optimal prediction accuracy of the credit score "grade" is 95.7, when the max depth is 15 and others are set as default values.
+After multiple experiments by changing different parameters of the Decision Tree model, it can be concluded that the optimal prediction accuracy of the credit score "grade" is 95.7%, when the max depth is 15 and others are set as default values.
 
 # Conclusion
 The prediction accuracy of the optimal k-NN model achieves 85.8%. It is not influenced by correlation of different features, taking test data as a cumulative features in a
