@@ -27,19 +27,19 @@ According to above plot, although there were overlaps, it was noteworthy that th
 # Model 1  k-NN
 Before applying k-NN to the original loan dataset, I scaled the dataset by 3 statistical methods, Min-Max Scaling, Standard Scaling and Robust Scaling.
 
-![readme_plot4](https://user-images.githubusercontent.com/64850893/86265486-d2d44480-bb91-11ea-90b3-b1e101034852.jpg)
+<img src="https://user-images.githubusercontent.com/64850893/86265486-d2d44480-bb91-11ea-90b3-b1e101034852.jpg" width="800" height="100">
 
 By the above results, the Min-Max scaling will be applied in the following cases.
 
 It's ideal to utilize the raw dataset for all parts of analysis, however, since this is a 880,000 * 9 dataset, the computation cost was heavy. In fact, it takes about 20 minutes to compute the results in the last table. To explore how the parameters of k-NN affects its prediction accuracy efficiently, modification is necessary. Therefore, PCA was utilized to decrease the number of dimensions in the dataset.
 
-![readme_plot5](https://user-images.githubusercontent.com/64850893/86265936-79204a00-bb92-11ea-97c4-00cb86023f74.jpg)
+<img src="https://user-images.githubusercontent.com/64850893/86265936-79204a00-bb92-11ea-97c4-00cb86023f74.jpg" width="800" height="150">
 
 According to the above graph, Choosing N=5 as PCA components makes most sense, since it increases the efficiency by around 150 times at the cost of about 2% of prediction accuracy, compared to the case when N=9.
 
 The next step is to tune the parameters of k-NN to increase the prediction accuracy, take the number of k-NN neighbors for example.
 
-![readme_plot6](https://user-images.githubusercontent.com/64850893/86266446-3c088780-bb93-11ea-82e8-2eaec34fc3b0.jpg)
+<img src="https://user-images.githubusercontent.com/64850893/86266446-3c088780-bb93-11ea-82e8-2eaec34fc3b0.jpg" width="600" height="400">
 
 After multiple experiments by changing different parameters, it can be concluded that the optimal prediction accuracy of the credit score "grade" by k-NN was 86.7%, when the scaling method was Min-Max, the test size is 0.1, the weight was "distance", the number of neighbors was 15, the type of distance was manhattan and PCA_N=9 (original dataset).
 
@@ -48,7 +48,7 @@ To discover if there was any room for improvement of the prediction accuracy, th
 
 Similarly, I tuned the parameters of Decision Tree to increase the prediction accuracy, take the maximum depth for example.
 
-![readme_plot7](https://user-images.githubusercontent.com/64850893/86267279-77578600-bb94-11ea-8797-97e7c0ce9cdb.jpg)
+<img src="https://user-images.githubusercontent.com/64850893/86267279-77578600-bb94-11ea-8797-97e7c0ce9cdb.jpg" width="600" height="400">
 
 One of the advantages of the Decision Tree model is that it is easy to interpret and visualize. For this loan dataset, the prediction accuracy achieves 95.8% when the max depth is 15. The visualization of a decision tree with 15 layers of nodes is a little bit messy. To clearly demonstrate how each node is split by a specific feature, I visualized the process of a decision mdoel when max depth was 4.
 
@@ -56,7 +56,7 @@ One of the advantages of the Decision Tree model is that it is easy to interpret
 
 It is noteworthy that in the optimal Decision Tree model for this loan dataset, the "interest rate" takes up a considerable percentage of importance among all 9 features, based on the following table.
 
-![readme_plot9](https://user-images.githubusercontent.com/64850893/86268012-8e4aa800-bb95-11ea-82c5-a77f699f4611.jpg)
+<img src="https://user-images.githubusercontent.com/64850893/86268012-8e4aa800-bb95-11ea-82c5-a77f699f4611.jpg" width="600" height="400">
 
 After multiple experiments by changing different parameters of the Decision Tree model, it can be concluded that the optimal prediction accuracy of the credit score "grade" was 95.7%, when the max depth is 15 and others were set as default values.
 
