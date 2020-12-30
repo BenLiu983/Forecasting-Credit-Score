@@ -66,7 +66,7 @@ Then Random forest was implemented on the dataset, since this model was basicall
 # Model 4 lightGBM
 I also applied a more advanced tree-based model, lightGBM. Through hyperparameter tuning with Grid Search method, the prediction accuracy of the optimal model is 94.9%. Similar to Decision Tree, the "interest rate" was the most significant feature, based on the following plot.
 
-
+<img src="https://user-images.githubusercontent.com/64850893/103383488-e15bd400-4ac0-11eb-98ec-a42e7fe196b6.jpg" width="600" height="400">
 
 # Conclusion
 The prediction accuracy of the optimal k-NN model achieves 85.8%. It is not influenced by correlation of different features, taking test data as a cumulative features in way of a distance. However, a disadvantage of k-NN model is that, it is somewhat difficult to interpret the relationship between the response variable and the independent variables. Therefore, the Decision Tree algorithm was utilized, and the relevant optimal prediction accuracy increased to 95.7%. But it's noteworthy that the feature "interest rate" had a considerable influence on the response variable "grade". The performance of Random Forest and lightGBM was similar to the Decision Tree. Therefore, there was a trade-off in applying k-NN and tree-based models in this loan dataset, where k-NN was more robust and tree-based models were easier to interpret.
