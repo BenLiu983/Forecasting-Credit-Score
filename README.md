@@ -61,7 +61,7 @@ It is noteworthy that in the optimal Decision Tree model for this loan dataset, 
 After multiple experiments by changing different parameters of the Decision Tree model, it can be concluded that the optimal prediction accuracy of the credit score "grade" was 95.7%, when the max depth is 15 and others were set as default values.
 
 # Model 3 Random Forest
-Then Random forest was implemented on the dataset, since this model was basically a collection of decision trees, where each tree was slightly different from the others. It turned out the the prediction accuracy in this case was 92.5%. 
+Then Random forest was implemented on the dataset, since this model was basically a collection of decision trees, where each tree was slightly different from the others. After parameter tuning experiments, the prediction accuracy of the optimal model was 94.7%.
 
 # Model 4 LightGBM
 I also applied a more advanced tree-based model, LightGBM. Through hyperparameter tuning with Grid Search method, the prediction accuracy of the optimal model is 94.9%. Similar to Decision Tree, the "interest rate" was the most significant feature, based on the following plot.
