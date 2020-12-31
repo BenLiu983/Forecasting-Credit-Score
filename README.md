@@ -6,7 +6,7 @@ What major factors does the management team of a bank consider when they decide 
 This project is based on a dataset that contains information about 1 million potential borrowers of a specific bank, which is a peer to peer lending bank based in Ireland. The complete dataset is from Lending Club, and it has been changed from Kaggle. The goal of this report is to predict the credit score of loan applicants with high accuracy, as well as drive business insights. 
 
 # Methodology
-First of all, I conducted exploratory data analysis and generated visualization. After that, k-NN, Decision Tree, Random Forest, lightGBM, and SVM were applied on the dataset to predict the credit score of loan applicants.
+First of all, I conducted exploratory data analysis and generated visualization. After that, k-NN, Decision Tree, Random Forest, and LightGBM were applied on the dataset to predict the credit score of loan applicants.
 
 # Data Preparation
 After feature selection, the target dataset contains nearly 1 million records and 10 major features, including 5 numeric features and 5 categorical features.
@@ -63,13 +63,13 @@ After multiple experiments by changing different parameters of the Decision Tree
 # Model 3 Random Forest
 Then Random forest was implemented on the dataset, since this model was basically a collection of decision trees, where each tree was slightly different from the others. It turned out the the prediction accuracy in this case was 92.5%. 
 
-# Model 4 lightGBM
-I also applied a more advanced tree-based model, lightGBM. Through hyperparameter tuning with Grid Search method, the prediction accuracy of the optimal model is 94.9%. Similar to Decision Tree, the "interest rate" was the most significant feature, based on the following plot.
+# Model 4 LightGBM
+I also applied a more advanced tree-based model, LightGBM. Through hyperparameter tuning with Grid Search method, the prediction accuracy of the optimal model is 94.9%. Similar to Decision Tree, the "interest rate" was the most significant feature, based on the following plot.
 
 <img src="https://user-images.githubusercontent.com/64850893/103383488-e15bd400-4ac0-11eb-98ec-a42e7fe196b6.jpg" width="600" height="400">
 
 # Conclusion
-The prediction accuracy of the optimal k-NN model achieves 85.8%. It is not influenced by correlation of different features, taking test data as a cumulative features in way of a distance. However, a disadvantage of k-NN model is that, it is somewhat difficult to interpret the relationship between the response variable and the independent variables. Therefore, the Decision Tree algorithm was utilized, and the relevant optimal prediction accuracy increased to 95.7%. But it's noteworthy that the feature "interest rate" had a considerable influence on the response variable "grade". The performance of Random Forest and lightGBM was similar to the Decision Tree. Therefore, there was a trade-off in applying k-NN and tree-based models in this loan dataset, where k-NN was more robust and tree-based models were easier to interpret.
+The prediction accuracy of the optimal k-NN model achieves 85.8%. It is not influenced by correlation of different features, taking test data as a cumulative features in way of a distance. However, a disadvantage of k-NN model is that, it is somewhat difficult to interpret the relationship between the response variable and the independent variables. Therefore, the Decision Tree algorithm was utilized, and the relevant optimal prediction accuracy increased to 95.7%. But it's noteworthy that the feature "interest rate" had a considerable influence on the response variable "grade". The performance of Random Forest and LightGBM was similar to the Decision Tree. Therefore, there was a trade-off in applying k-NN and tree-based models in this loan dataset, where k-NN was more robust and tree-based models were easier to interpret.
 
 # Future work
 In the future investigation, I will attempt to experiment various combination of features. Additionally, more machine learning models with different parameters would be implemented.
